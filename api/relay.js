@@ -27,7 +27,7 @@ export default async function handler(req) {
 
   try {
     const url = new URL(req.url);
-    const targetUrl = TARGET_BASE + url.pathname + url.search;
+    const targetUrl = TARGET_BASE;
 
     const headers = new Headers();
     let clientIp = null;
